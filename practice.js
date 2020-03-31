@@ -119,6 +119,17 @@ itemAmounts.desk = 7;
 // # Write a method that accepts a number and returns its factorial.
 // # For example, the factorial of 5 is 5 * 4 * 3 * 2 * 1 = 120.
 
+function factorial(number) {
+  // console.log(number);
+  var product = 1;
+  for (var i = number; i > 0; i--) {
+    product *= i;
+  }
+  return product;
+}
+
+console.log(factorial(5));
+
 
 // # Write a method that accepts two arrays of numbers, and prints the sum of every combination of numbers from first and second array. 
 // # For example, if the method receives [1, 5, 10] and [100, 500, 1000], the method should print a list: [101, 501, 1001, 105, 505, 1005, 110, 510, 1010].
@@ -135,4 +146,4 @@ function combinationsOfSums(numbers1, numbers2) {
   console.log(allSums);
 }
 
-combinationsOfSums([1, 5, 10], [100, 500, 1000]);
+// combinationsOfSums([1, 5, 10], [100, 500, 1000]);
