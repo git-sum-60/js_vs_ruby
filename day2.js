@@ -29,4 +29,18 @@ function everyOther(letters) {
   return filteredArray;
 }
 
-console.log(everyOther(["a", "b", "c", "d", "e", "f"]));
+// console.log(everyOther(["a", "b", "c", "d", "e", "f"]));
+
+// # Write a method that accepts one argument - an array of numbers that are in ascending order. The method that returns a new array with the same values in descending order. However, do not use the "reverse" method built in to Ruby.
+
+function descending(numbers) {
+  var reversed = [];
+  for (var i = numbers.length - 1; i >= 0; i--) {
+    console.log(numbers[i]);
+    reversed.push(numbers[i]);
+    // console.log(numbers[i]);
+  }
+  // return reversed;
+}
+
+console.log(descending([1,4,8,12,15]));
